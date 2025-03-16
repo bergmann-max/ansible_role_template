@@ -1,5 +1,5 @@
 ---
-# roles/template/meta/main.yml
+# roles/ansible_role_template/meta/main.yml
 
 galaxy_info:
   author: Max Bergmann

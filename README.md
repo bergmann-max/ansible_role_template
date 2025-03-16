@@ -1,7 +1,7 @@
 # Ansible role template
 
 ``` 
-ansible-role-teplate/
+ansible_role_teplate/
 ├── defaults/
 │   ├── main.yml      # Default variables
 ├── files/

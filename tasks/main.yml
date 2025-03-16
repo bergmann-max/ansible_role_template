@@ -1,5 +1,5 @@
 ---
-# roles/template/tasks/main.yml
+# roles/ansible_role_template/tasks/main.yml
 
 - name: Update repositories cache and install "foo" package
   ansible.builtin.apt:
