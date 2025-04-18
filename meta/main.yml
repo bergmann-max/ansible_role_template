@@ -4,7 +4,7 @@
 galaxy_info:
   author: Max Bergmann
   description: An Ansible role template
-  license: MIT
+  license: Unlicens
   min_ansible_version: "2.9"
   platforms:
     - name: Ubuntu
