@@ -1,5 +1,9 @@
 # ansible_role_template
 
+![Ansible](https://img.shields.io/badge/ansible-%3E%3D%202.9-blue)
+![Platform](https://img.shields.io/badge/platform-Ubuntu-lightgrey)
+![License](https://img.shields.io/badge/license-Unlicense-green)
+
 An Ansible role template — replace this with a short description of what the role does.
 
 ## Requirements
@@ -20,12 +24,6 @@ Variables vars (`vars/main.yml`):
 | Variable      | Default   | Description                   |
 |---------------|-----------|-------------------------------|
 | `example_var` | `"value"` | Replace with actual variables |
-
-## Role Variables
-
-| Variable       | Default Value  | Description    |
-|----------------|----------------|----------------|
-|                |                |                |
 
 ## Usage Example
 
