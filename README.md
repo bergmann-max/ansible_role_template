@@ -9,7 +9,7 @@ An Ansible role template — replace this with a short description of what the r
 ## Requirements
 
 - Ansible >= 2.9
-- Target: Ubuntu (all versions)
+- Target: Ubuntu
 
 ## Role Variables
 
@@ -44,7 +44,7 @@ Variables vars (`vars/main.yml`):
 |        |                                  |
 
 ---
-```
+
 ## Handlers
 
 | Handler  | Description                    |
