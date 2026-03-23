@@ -1,6 +1,6 @@
 # ansible_role_template
 
-[![Ansible](https://img.shields.io/badge/ansible-%3E%3D%202.9-EE0000?logo=ansible&logoColor=white)](https://www.ansible.com/)
+[![Ansible](https://img.shields.io/badge/ansible-%3E%3D%202.10-EE0000?logo=ansible&logoColor=white)](https://www.ansible.com/)
 [![Platform](https://img.shields.io/badge/platform-Ubuntu-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 [![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
 
@@ -8,7 +8,7 @@ An Ansible role template — replace this with a short description of what the r
 
 ## Requirements
 
-- Ansible >= 2.9
+- Ansible >= 2.10
 
 ## Role Variables
 
