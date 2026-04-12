@@ -2,6 +2,7 @@
 
 [![Ansible](https://img.shields.io/badge/ansible-%3E%3D%202.10-EE0000?logo=ansible&logoColor=white)](https://www.ansible.com/)
 [![Platform](https://img.shields.io/badge/platform-Ubuntu-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+[![your-work](https://img.shields.io/badge/your--work-replace--me-blueviolet?logo=rocket&logoColor=white)](https://shields.io/)
 [![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
 
 An Ansible role template — replace this with a short description of what the role does.
@@ -24,31 +25,38 @@ Variables vars (`vars/main.yml`):
 |---------------|-----------|-------------------------------|
 | `example_var` | `"value"` | Replace with actual variables |
 
-## Usage Example
+## Installation
+
+Include via a `requirements.yml` and installed with `ansible-galaxy`:
 
 ```yaml
-- name: Example task
-  hosts: all
-  become: true
-  roles:
-    - role: ansible_role_template
+# requirements.yml
+roles:
+  - name: ansible_role_beszel
+    src: git+ssh://git@github.com/bergmann-max/ansible_role_beszel.git
+    version: main
+    scm: git
+```
+
+```bash
+ansible-galaxy install -r requirements.yml
 ```
 
 ---
 
 ## Tags
 
-| Tag    | Purpose                          |
-|--------|----------------------------------|
-|        |                                  |
+| Variable      | Default   | Description                   |
+|---------------|-----------|-------------------------------|
+| `example_var` | `"value"` | Replace with actual variables |
 
 ---
 
 ## Handlers
 
-| Handler  | Description                    |
-|----------|--------------------------------|
-|          |                                |
+| Variable      | Default   | Description                   |
+|---------------|-----------|-------------------------------|
+| `example_var` | `"value"` | Replace with actual variables |
 
 ---
 
@@ -60,11 +68,10 @@ Unlicense
 
 ## Dependencies
 
-No dependencies.
+Replace with actual dependencies.
 
 ---
 
 ## Author Information
 
-Max Bergmann 
-
+Max Bergmann

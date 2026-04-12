@@ -2,10 +2,11 @@
 # roles/ansible_role_template/meta/main.yml
 
 galaxy_info:
+  role_name: template
   author: Max Bergmann
   description: An Ansible role template
   license: Unlicense
-  min_ansible_version: "2.9"
+  min_ansible_version: "2.10"
   platforms:
     - name: Ubuntu
       versions:
