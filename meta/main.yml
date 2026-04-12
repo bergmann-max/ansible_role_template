@@ -9,9 +9,8 @@ galaxy_info:
   min_ansible_version: "2.10"
   platforms:
     - name: Ubuntu
-      versions:
-        - all
   galaxy_tags:
+    - template
     - foo
     - bar
 dependencies: []
