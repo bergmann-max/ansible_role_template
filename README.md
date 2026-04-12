@@ -32,8 +32,8 @@ Include via a `requirements.yml` and installed with `ansible-galaxy`:
 ```yaml
 # requirements.yml
 roles:
-  - name: ansible_role_beszel
-    src: git+ssh://git@github.com/bergmann-max/ansible_role_beszel.git
+  - name: ansible_role_template
+    src: git+ssh://git@github.com/bergmann-max/ansible_role_template.git
     version: main
     scm: git
 ```
