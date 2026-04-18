@@ -5,14 +5,14 @@
 [![your-work](https://img.shields.io/badge/your--work-replace--me-blueviolet?logo=rocket&logoColor=white)](https://shields.io/)
 [![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
 
-An Ansible role template — replace this with a short description of what the role does.
+An Ansible role template. Replace this with a short description of what the role does.
 
 ## Requirements
-
 - Ansible >= 2.10
+- foo
+- bar
 
 ## Role Variables
-
 Variables defaults (`defaults/main.yml`):
 
 | Variable      | Default   | Description                   |
@@ -26,11 +26,9 @@ Variables vars (`vars/main.yml`):
 | `example_var` | `"value"` | Replace with actual variables |
 
 ## Installation
-
-Include via a `requirements.yml` and installed with `ansible-galaxy`:
+Add to your `requirements.yml`:
 
 ```yaml
-# requirements.yml
 roles:
   - name: template
     src: git+ssh://git@github.com/bergmann-max/ansible_role_template.git
@@ -39,13 +37,22 @@ roles:
 ```
 
 ```bash
-ansible-galaxy install -r requirements.yml
+$ ansible-galaxy install -r requirements.yml
 ```
 
----
+## Example Playbook
+```yaml
+- name: Apply template role
+  hosts: all
+  become: true
+
+  roles:
+    - role: template
+      vars:
+        example_var: "value"
+```
 
 ## Tags
-
 | Variable      | Default   | Description                   |
 |---------------|-----------|-------------------------------|
 | `example_var` | `"value"` | Replace with actual variables |
@@ -53,25 +60,15 @@ ansible-galaxy install -r requirements.yml
 ---
 
 ## Handlers
-
 | Variable      | Default   | Description                   |
 |---------------|-----------|-------------------------------|
 | `example_var` | `"value"` | Replace with actual variables |
 
----
-
 ## License
-
 Unlicense
 
----
-
 ## Dependencies
-
 Replace with actual dependencies.
 
----
-
 ## Author Information
-
 Max Bergmann
