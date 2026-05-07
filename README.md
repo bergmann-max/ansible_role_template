@@ -1,8 +1,8 @@
 # ansible_role_template
 
-[![Ansible](https://img.shields.io/badge/ansible-%3E%3D%202.10-EE0000?logo=ansible&logoColor=white)](https://www.ansible.com/)
+[![Ansible](https://img.shields.io/badge/ansible-%3E%3D%202.10-EE0000?logo=ansible&logoColor=white)](https://docs.ansible.com/projects/ansible/latest/)
 [![Platform](https://img.shields.io/badge/platform-Ubuntu-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
-[![your-work](https://img.shields.io/badge/your--work-replace--me-blueviolet?logo=rocket&logoColor=white)](https://shields.io/)
+[![your-work](https://img.shields.io/badge/your--work-replace--me-blueviolet?logo=rocket&logoColor=white)](https://shields.io/docs)
 [![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
 
 An Ansible role template. Replace this with a short description of what the role does.
