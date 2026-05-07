@@ -26,43 +26,42 @@ Variables vars (`vars/main.yml`):
 | `example_var` | `"value"` | Replace with actual variables |
 
 ## Installation
-Add to your `requirements.yml`:
+
+Include via a `requirements.yml` and install with `ansible-galaxy`:
 
 ```yaml
-roles:
-  - name: template
-    src: git+ssh://git@github.com/bergmann-max/ansible_role_template.git
-    version: main
-    scm: git
+# requirements.yml
+- name: template
+  src: git+ssh://git@github.com/bergmann-max/ansible_role_template.git
+  version: main
 ```
 
 ```bash
-$ ansible-galaxy install -r requirements.yml
+ansible-galaxy install -r requirements.yml
 ```
 
-## Example Playbook
-```yaml
-- name: Apply template role
-  hosts: all
-  become: true
+## Usage
 
+```yaml
+- hosts: all
   roles:
-    - role: template
-      vars:
-        example_var: "value"
+    - template
 ```
 
 ## Tags
-| Variable      | Default   | Description                   |
-|---------------|-----------|-------------------------------|
-| `example_var` | `"value"` | Replace with actual variables |
+
+| Tag  | Description                     |
+|------|---------------------------------|
+| `foo` | Replace with actual tag info   |
+| `bar` | Replace with actual tag info   |
 
 ---
 
 ## Handlers
-| Variable      | Default   | Description                   |
-|---------------|-----------|-------------------------------|
-| `example_var` | `"value"` | Replace with actual variables |
+
+| Handler      | Triggered by              |
+|--------------|---------------------------|
+| `Reload bar` | Replace with actual tasks |
 
 ## License
 Unlicense

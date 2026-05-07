@@ -1,12 +1,15 @@
 ---
 # roles/ansible_role_template/tasks/main.yml
 
-- name: Foo_Bar
-  tags: foo, bar
+- name: Foo bar
+  become: true
   block:
 
     - name: Update repositories cache and install "foo" package
       ansible.builtin.apt:
         name: foo
+        state: present
         update_cache: true
-      notify: bar
+      notify: Reload bar
+
+  tags: [foo, bar]
